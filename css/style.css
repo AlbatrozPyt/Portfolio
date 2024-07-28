@@ -1,0 +1,256 @@
+/* Importando fontes */
+@font-face {
+  font-family: "Designer";
+  src: url("../assets/fonts/designer/DESIGNER.otf");
+}
+
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("../assets/fonts/comfortaa/Comfortaa-Light.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("../assets/fonts/comfortaa/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url("../assets/fonts/comfortaa/Comfortaa-Bold.ttf");
+}
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo do documento */
+body {
+  background: #03021d;
+  overflow-x: hidden;
+}
+
+/* Predefinindo estilo do título principal */
+h1 {
+  font-size: 60px;
+  font-family: Designer;
+  /* text-transform: uppercase; */
+  color: #fff;
+}
+
+/* Predefinindo estilo do parágrafo */
+p {
+  font-family: Comfortaa-Regular;
+  line-height: 22px;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  /* background-color: #fff; */
+}
+
+/* Animação da borda do header */
+@keyframes border-header {
+  0% {
+    transform: translateX(-100%);
+    box-shadow: 0 0 5px #ff1fa7;
+  }
+  100% {
+    transform: translateX(110%);
+    box-shadow: 0 0 5px cyan;
+  }
+}
+
+/* Caixa que vai executar a animação como uma borda falsa */
+.box-hidden {
+  justify-self: self-start;
+  position: absolute;
+
+  height: 95%;
+  width: 100%;
+  background: #03021d50;
+  animation: infinite 3s border-header;
+}
+
+/* Container que simula o header */
+.header-false {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 95%;
+  background: #03021d;
+  padding: 0 40px;
+}
+
+.header-false h1 {
+  font-size: 40px;
+}
+
+/* MAIN */
+main {
+  display: grid;
+  justify-items: center;
+}
+
+/* predefinindo configuração das seções */
+section {
+  width: 100%;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+article {
+  width: 100%;
+}
+
+/* Sessão sobre-mim */
+.sobre-mim {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tamanho das colunas dentro da sessão */
+.col-1,
+.col-2 {
+  width: 45%;
+}
+
+/* Coluna 1 */
+.col-1 {
+  display: grid;
+  gap: 20px;
+}
+
+.sobre-mim .col-1 p {
+  width: 100%;
+  text-align: justify;
+}
+
+.sobre-mim .col-1 a {
+  position: relative;
+  color: #fff;
+}
+
+/* Legenda de um link, que vai aparacer como um hover */
+.sobre-mim .col-1 a .legenda {
+  opacity: 0;
+  display: grid;
+  position: absolute;
+  z-index: 2;
+  top: 35px;
+  left: 0;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  background: #8080f0;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.1s opacity;
+}
+
+/* Triangulo para simular uma caixa de mensagem */
+.sobre-mim .col-1 a .legenda #tri {
+  position: absolute;
+  top: -40px;
+  z-index: 3;
+  justify-self: center;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid #8080f0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+/* Hover da legenda */
+.sobre-mim .col-1 a:hover > .legenda {
+  opacity: 100%;
+  transition: 0.3s opacity;
+}
+
+/* Styles do sessão sobre os projetos */
+.projeto-1 {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  background: linear-gradient(to left top, #ff50e4, #8531c6);
+}
+
+.proj {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.proj .demo {
+  display: flex;
+  justify-content: end;
+  width: 30%;
+}
+
+.proj video {
+  width: 250px;
+  border: 2px solid #fff;
+}
+
+.proj article {
+  margin: 10px 0;
+}
+
+.proj p {
+  text-align: justify;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.proj h2 {
+  font-size: 40px;
+  font-family: Designer;
+  color: #fff;
+}
+
+.proj ul li {
+  margin: 0 40px;
+  color: #fff;
+}
+
+.logo {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+.logo .logo-project {
+  margin: 20px 0;
+}
+
+.sobre-projeto {
+  width: 70%;
+}
+
+.tecnologias {
+  width: 80%;
+}
+
+.links {
+  width: 20%;
+  display: grid;
+  gap: 10px;
+}
+
+.links a {
+  font-family: Comfortaa-Light;
+  color: #fff;
+}
