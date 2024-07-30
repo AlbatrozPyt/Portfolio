@@ -1,0 +1,116 @@
+/* Sessão sobre-mim */
+.sobre-mim {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.section-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100vw);
+  width: 100%;
+  height: 100%;
+  background: #EDF4FF;
+  transition: 0.8s;
+}
+
+#check {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background-image: url("../assets/images/arrow-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  background-color: #EDF4FF;
+  border-radius: 50% 0 0 50%;
+  transition: 0.5s;
+}
+
+#check:checked ~ label {
+  transform: translateX(-95vw);
+  background-image: url("../assets/images/arrow-light.svg");
+  background-color: #03021d;
+  border-radius: 0 50% 50% 0;
+  transition: 0.5s;
+}
+
+#check:checked ~ .col-1 {
+  transform: translateX(100vw);
+  transition: 0.8s;
+}
+
+#check:checked ~ .section-hidden {
+  transform: translateX(0);
+  transition: 0.8s;
+}
+
+/* Tamanho das colunas dentro da sessão */
+.col-1,
+.col-2 {
+  width: 45%;
+  transition: 0.8s;
+}
+
+/* Coluna 1 */
+.col-1 {
+  display: grid;
+  gap: 20px;
+}
+
+.sobre-mim .col-1 p {
+  width: 100%;
+  text-align: justify;
+}
+
+.sobre-mim .col-1 a {
+  position: relative;
+  color: #EDF4FF;
+}
+
+/* Legenda de um link, que vai aparacer como um hover */
+.sobre-mim .col-1 a .legenda {
+  opacity: 0;
+  display: grid;
+  position: absolute;
+  z-index: 2;
+  top: 35px;
+  left: 0;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  background: #8080f0;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.1s opacity;
+}
+
+/* Triangulo para simular uma caixa de mensagem */
+.sobre-mim .col-1 a .legenda #tri {
+  position: absolute;
+  top: -40px;
+  z-index: 3;
+  justify-self: center;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid #8080f0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+/* Hover da legenda */
+.sobre-mim .col-1 a:hover > .legenda {
+  opacity: 100%;
+  transition: 0.3s opacity;
+}
