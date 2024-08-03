@@ -37,11 +37,15 @@ body {
 }
 
 /* Predefinindo estilo do título principal */
-h1 {
+h1, h2 {
   font-size: 60px;
   font-family: Designer;
   /* text-transform: uppercase; */
   color: #EDF4FF;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 /* Predefinindo estilo do parágrafo */
@@ -51,81 +55,9 @@ p {
   color: #EDF4FF;
 }
 
-/* HEADER */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  background-color: #03021d;
-}
-
-/* Animação da borda do header */
-@keyframes border-header {
-  0% {
-    transform: translateX(-100%);
-    box-shadow: 0 0 5px #ff1fa7;
-  }
-  100% {
-    transform: translateX(110%);
-    box-shadow: 0 0 5px cyan;
-  }
-}
-
-/* Caixa que vai executar a animação como uma borda falsa */
-.box-hidden {
-  justify-self: self-start;
-  position: absolute;
-
-  height: 95%;
-  width: 100%;
-  background: #03021d50;
-  animation: infinite 3s border-header;
-}
-
-/* Container que simula o header */
-.header-false {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  height: 95%;
-  background: #03021d;
-  padding: 0 40px;
-}
-
-.header-false h1 {
-  font-size: 40px;
-}
-
-.header-false nav {
-  display: flex;
-  align-items: 20px;
-  gap: 40px;
-}
-
-.header-false nav a {
-  font-family: Comfortaa-Light;
-  font-size: 14px;
-  color: #ffffff99;
-  text-decoration: none;
-  transition: .3s color;
-}
-
-.header-false nav a:hover {
-  color: #fffEDF4FF;
-  transition: .3s color;
-}
-
 /* MAIN */
 main {
+  margin-top: 70px;
   display: grid;
   justify-items: center;
 }
@@ -141,78 +73,4 @@ article {
 }
 
 
-/* Styles do sessão sobre os projetos */
-.projeto-1 {
-  display: grid;
-  justify-items: center;
-  width: 100%;
-  background: linear-gradient(to left top, #ff50e4, #8531c6);
-}
 
-.proj {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.proj .demo {
-  display: flex;
-  justify-content: end;
-  width: 30%;
-}
-
-.proj video {
-  width: 100%;
-  height: 480px;
-}
-
-.proj article {
-  margin: 10px 0;
-}
-
-.proj p {
-  text-align: justify;
-  width: 80%;
-  margin: 10px 0;
-}
-
-.proj h2 {
-  font-size: 40px;
-  font-family: Designer;
-  color: #EDF4FF;
-}
-
-.proj ul li {
-  margin: 0 40px;
-  color: #EDF4FF;
-}
-
-.logo {
-  display: grid;
-  justify-items: center;
-  width: 100%;
-}
-
-.logo .logo-project {
-  margin: 20px 0;
-}
-
-.sobre-projeto {
-  width: 70%;
-}
-
-.tecnologias {
-  width: 70%;
-}
-
-.links {
-  width: 30%;
-  display: grid;
-  gap: 10px;
-}
-
-.links a {
-  font-family: Comfortaa-Light;
-  color: #EDF4FF;
-  width: 100%;
-}

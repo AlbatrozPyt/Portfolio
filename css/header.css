@@ -1,0 +1,72 @@
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #03021d;
+  }
+  
+  /* Animação da borda do header */
+  @keyframes border-header {
+    0% {
+      transform: translateX(-100%);
+      box-shadow: 0 0 5px #ff1fa7;
+    }
+    100% {
+      transform: translateX(110%);
+      box-shadow: 0 0 5px cyan;
+    }
+  }
+  
+  /* Caixa que vai executar a animação como uma borda falsa */
+  .box-hidden {
+    justify-self: self-start;
+    position: absolute;
+  
+    height: 95%;
+    width: 100%;
+    background: #03021d50;
+    animation: infinite 3s border-header;
+  }
+  
+  /* Container que simula o header */
+  .header-false {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 95%;
+    background: #03021d;
+    padding: 0 40px;
+  }
+  
+  .header-false h1 {
+    font-size: 40px;
+  }
+  
+  .header-false nav {
+    display: flex;
+    align-items: 20px;
+    gap: 40px;
+  }
+  
+  .header-false nav a {
+    font-family: Comfortaa-Light;
+    font-size: 14px;
+    color: #ffffff99;
+    text-decoration: none;
+    transition: .3s color;
+  }
+  
+  .header-false nav a:hover {
+    color: #EDF4FF;
+    transition: .3s color;
+  }

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Olá, seja bem vindo !!!</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/sobre-mim.css" />
+    <link rel="stylesheet" href="css/sobre-mim-2.css" />
+    <link rel="stylesheet" href="css/projeto.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link
       rel="shortcut icon"
       href="assets/images/favicon/favicon-32x32.png"
@@ -22,17 +26,16 @@
         <nav>
           <a href="#sobre-mim">Sobre mim</a>
           <a href="#proj">Projetos</a>
+          <a href="#contatos">Contatos</a>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section id="sobre-mim" class="sobre-mim">
+    <main id="sobre-mim">
+      <section class="sobre-mim">
+        <input type="checkbox" id="check" />
 
-        <input type="checkbox" id="check">
-
-        <label for="check">
-        </label>
+        <label for="check"> </label>
 
         <article class="col-1">
           <h1>Olá, eu sou Matheus</h1>
@@ -58,9 +61,56 @@
           </p>
         </article>
 
-        <div class="section-hidden">
-          
-        </div>
+        <article class="col-2">
+          <img class="albatroz" src="assets/images/albatroz.gif" alt="">
+        </article>
+
+        <section class="section-hidden">
+          <article class="habilidades">
+            <h1>Habilidades</h1>
+
+            <article class="h">
+              <img src="assets/images/icons/csharp.svg" alt="" />
+              <img src="assets/images/icons/php.svg" alt="" />
+              <img src="assets/images/icons/html.svg" alt="" />
+              <img src="assets/images/icons/css.svg" alt="" />
+              <img src="assets/images/icons/javascript.svg" alt="" />
+              <img src="assets/images/icons/dotnet.svg" alt="" />
+              <img src="assets/images/icons/yii.svg" alt="" />
+              <img src="assets/images/icons/react.svg" alt="" />
+              <img src="assets/images/icons/sql-server.svg" alt="" />
+              <img src="assets/images/icons/mysql.svg" alt="" />
+              <img src="assets/images/icons/mongodb.svg" alt="" />
+              <img src="assets/images/icons/figma.svg" alt="" />
+            </article>
+
+            <h1>Certificações</h1>
+
+            <article class="h">
+              <a
+                target="_blank"
+                href="https://www.credly.com/badges/de519ac1-76d7-4f3f-9a0a-32a746395b6c/public_url"
+              >
+                <img
+                  class="badge"
+                  src="assets/images/badge-pl-900.png"
+                  alt=""
+                />
+              </a>
+
+              <a
+                target="_blank"
+                href="https://www.credly.com/badges/dcce296d-4fa0-476e-a266-6bc81eab4b73/public_url"
+              >
+                <img
+                  class="badge"
+                  src="assets/images/badge-ai-900.png"
+                  alt=""
+                />
+              </a>
+            </article>
+          </article>
+        </section>
       </section>
 
       <section id="proj" class="projeto-1 proj">
@@ -148,6 +198,61 @@
         </article>
       </section>
     </main>
+
+    <footer id="contatos">
+      <div class="footer-flex">
+        <div class="footer-col">
+          <h2>Redes</h2>
+
+          <a href="https://www.linkedin.com/in/matheus-enrike/">
+            <div class="rede">
+              <img src="assets/images/icons/linkedin.svg" alt="" />
+              <p>Linkedin</p>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/matheusenk/">
+            <div class="rede">
+              <img src="assets/images/icons/instagram.svg" alt="" />
+              <p>Instagram</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h2>Contatos</h2>
+
+          <div class="rede">
+            <img src="assets/images/icons/gmail.svg" alt="" />
+            <p>matheusenrikeramalho@gmail.com</p>
+          </div>
+
+          <div class="rede">
+            <img src="assets/images/icons/whatsapp.svg" alt="" />
+            <p>11 91752-5690</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer-bottom">
+        <p>© Copyrithg 2024 - Matheus Enrike</p>
+
+        <div class="others">
+          <a href="https://github.com/AlbatrozPyt/">
+            <img src="assets/images/icons/github.svg" alt="" />
+          </a>
+
+          <a href="https://www.credly.com/users/matheus-enrike">
+            <img src="assets/images/icons/credly.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>

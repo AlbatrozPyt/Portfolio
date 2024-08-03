@@ -8,59 +8,10 @@
   height: 80vh;
 }
 
-.section-hidden {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-100vw);
-  width: 100%;
-  height: 100%;
-  background: #EDF4FF;
-  transition: 0.8s;
-}
-
-#check {
-  display: none;
-}
-
-label {
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  width: 60px;
-  height: 60px;
-  background-image: url("../assets/images/arrow-dark.svg");
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: center;
-  background-color: #EDF4FF;
-  border-radius: 50% 0 0 50%;
-  transition: 0.5s;
-}
-
-#check:checked ~ label {
-  transform: translateX(-95vw);
-  background-image: url("../assets/images/arrow-light.svg");
-  background-color: #03021d;
-  border-radius: 0 50% 50% 0;
-  transition: 0.5s;
-}
-
-#check:checked ~ .col-1 {
-  transform: translateX(100vw);
-  transition: 0.8s;
-}
-
-#check:checked ~ .section-hidden {
-  transform: translateX(0);
-  transition: 0.8s;
-}
-
 /* Tamanho das colunas dentro da sessão */
 .col-1,
 .col-2 {
-  width: 45%;
+  width: 45%;;
   transition: 0.8s;
 }
 

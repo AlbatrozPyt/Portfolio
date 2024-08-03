@@ -1,0 +1,59 @@
+footer {
+    width: 100%;
+    height: 250px;
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+footer hr {
+    color: #edf4ff;
+    margin: 20px 0;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-flex .footer-col {
+    display: grid;
+    gap: 20px;
+    width: 30%;
+}
+
+.footer-flex .footer-col .rede {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.footer-bottom .others {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.albatroz {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
