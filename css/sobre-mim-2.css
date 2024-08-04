@@ -8,6 +8,7 @@
   height: 100%;
   background: #edf4ff;
   transition: 0.8s;
+  overflow-y: scroll;
 }
 
 
@@ -33,7 +34,7 @@ label {
   background-position: center;
   background-color: #edf4ff;
   border-radius: 50% 0 0 50%;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 #check:checked ~ label {
@@ -41,7 +42,7 @@ label {
   background-image: url("../assets/images/arrow-light.svg");
   background-color: #03021d;
   border-radius: 0 50% 50% 0;
-  transition: 0.5s;
+  transition: 0.8;
 }
 
 #check:checked ~ .col-1,
